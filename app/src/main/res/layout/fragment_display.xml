@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.test.calculator.CalculatorViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="displayStateTextView,displayResultTextView"
+            android:orientation="vertical"
+            app:flow_horizontalAlign="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/displayStateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="1234567 * 123124123124"
+            android:lines="1"
+            android:text="@{viewModel.totalStateLiveData}"
+            android:textSize="@dimen/textMiddleSize"
+            android:textAlignment="textEnd"
+            />
+
+        <TextView
+            android:id="@+id/displayResultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="= 192"
+            android:text="@{viewModel.resultLiveData}"
+            android:textSize="@dimen/textBigSize"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
