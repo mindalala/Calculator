@@ -23,7 +23,8 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`1`)}"
                 android:text="1"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
+
                 />
 
             <Button
@@ -33,7 +34,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`2`)}"
                 android:text="2"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -43,7 +44,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`3`)}"
                 android:text="3"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
 
                 />
 
@@ -54,8 +55,9 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickSymbolButton(`+`)}"
                 android:text="+"
-                android:autoSizeTextType="uniform"
-/>
+                style="@style/calculatorButton"
+
+                />
         </TableRow>
 
         <TableRow android:layout_weight="1">
@@ -67,7 +69,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`4`)}"
                 android:text="4"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -77,7 +79,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`5`)}"
                 android:text="5"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -87,7 +89,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`6`)}"
                 android:text="6"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -97,7 +99,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickSymbolButton(`-`)}"
                 android:text="-"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
         </TableRow>
 
@@ -110,7 +112,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`7`)}"
                 android:text="7"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -120,7 +122,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`8`)}"
                 android:text="8"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -130,7 +132,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`9`)}"
                 android:text="9"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -140,7 +142,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickSymbolButton(`*`)}"
                 android:text="*"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
         </TableRow>
 
@@ -153,7 +155,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickNumberButton(`0`)}"
                 android:text="0"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -163,7 +165,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickEqualButton()}"
                 android:text="="
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -173,7 +175,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickClearButton()}"
                 android:text="c"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
 
             <Button
@@ -183,7 +185,7 @@
                 android:layout_weight="1"
                 android:onClickListener="@{(v) -> viewModel.onClickSymbolButton(`/`)}"
                 android:text="/"
-                android:autoSizeTextType="uniform"
+                style="@style/calculatorButton"
                 />
         </TableRow>
 
